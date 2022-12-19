@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MarcusTi</title>
+    <!-- link fuenta encontrada desde un cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <!-- Link de carpeta de Estilos de css vinculada con SASS -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Link de vinculacion con JavaScrip -->
+    <script src="js/script.js" defer></script>
+</head>
+
+<body>
+    <header class="header">
+        <a href="home.html" class="logo"> 
+            <img src="images/Logo.png" width="216px" height="50px">    
+        </a>
+        <nav class="navbar">
+            <ul>
+                <li><a href="home.html">INICIO</a></li>
+                <li><a href="products.html">PRODUCTOS</a></li>
+                <li><a href="#">INFORMACIÓN ></a>
+                    <ul>
+                        <li><a href="about.html">Acerca de Nosotros</a></li>
+                        <li><a href="blogs.html">BLOGS</a></li>
+                    </ul>
+                </li>
+                <li><a href="contact.html">CONTACTANOS</a></li>
+                <li><a href="#">CUENTA ></a>
+                    <ul>
+                        <li><a href="login.html">Iniciar Sesión</a></li>
+                        <li><a href="register.html">Registrate</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+        <div class="icons">
+            <div id="menu-btn" class="fas fa-bars"></div>
+            <div id="search-btn" class="fas fa-search"></div>
+            <a href="cart.html" class="fas fa-shopping-cart"></a>
+        </div>
+        <form action="" class="search-form">
+            <input type="search" name="" placeholder="Buscar..." id="search-box">
+            <label for="search-box" class="fas fa-search"></label>
+        </form>
+    </header>
+    <section class="home">
+        <div class="slide active" style="background: url(images/home-bg-1.png) no-repeat;">
+            <div class="content">
+                <span>Registra tu Correo y Recibe un cupón de</span>
+                <h3>50% de Descuento</h3>
+                <a href="#" class="btn">Registrate Ahora</a>
+            </div>
+        </div>
+        <div class="slide" style="background: url(images/home-bg-2.png) no-repeat;">
+            <div class="content">
+                <span>Registra tu Correo y Recibe un cupón de</span>
+                <h3>50% de Descuento</h3>
+                <a href="#" class="btn">Registrate Ahora</a>
+            </div>
+        </div>
+        <div class="slide" style="background: url(images/home-bg-3.png) no-repeat;">
+            <div class="content">
+                <span>Registra tu Correo y Recibe un cupón de</span>
+                <h3>50% de Descuento</h3>
+                <a href="#" class="btn">Registrate Ahora</a>
+            </div>
+        </div>
+        <div id="next-slide" onclick="next()" class="fas fa-angle-right"></div>
+        <div id="prev-slide" onclick="prev()" class="fas fa-angle-left"></div>
+    </section>
+    <section class="banner">
+        <div class="box">
+            <img src="images/banner-1.jpg" alt="">
+            <div class="content">
+                <span>Servicios Streaming</span>
+                <h3>Diferentes Combos</h3>
+                <a href="#" class="btn">Mas Información</a>
+            </div>
+        </div>
+        <div class="box">
+            <img src="images/banner-2.jpg" alt="">
+            <div class="content">
+                <span>Tecnologia</span>
+                <h3>Mejor del Mercado</h3>
+                <a href="#" class="btn">Mas Información</a>
+            </div>
+        </div>
+        <div class="box">
+            <img src="images/banner-3.jpg" alt="">
+            <div class="content">
+                <span>Programación</span>
+                <h3>Software para ti</h3>
+                <a href="#" class="btn">Mas Información</a>
+            </div>
+        </div>
+    </section>
+    <section class="seperator"></section>
+    <section>
+        <div align= "center">
+            <video  width="550" height="400" controls autoplay muted>
+                <source src="video/streaming.mp4" type="video/mp4" />
+              </video>
+        </div>
+        <div class="box" align="center" >
+            <h2 style="font-size: 20px">Mejor <span>Contenido </span>Streaming</h2>
+            <p style="font-size: 17px">Una oportunidad de construir su negocio independiente. Puede trabajar dónde quiera y cuándo quiera, relacionándose con sus clientes desde la comodidad de su hogar con una manera muy sencilla y fácil. Una vez que se convierte en revendedor, comienza a trabajar al instante.</p>
+            <a href="https://wa.me/593991828721" class="btn">Contratanos ahora</a>
+        </div>
+    </section>
+    <section id="about2">
+        <div class="container2">
+            <h2 style="font-size: 20px">Programacion en los Mejores Lenguajes</h2>
+            <div class="about-flex">
+                <div class="about-flex-image">
+                    <img src="images/about2.png" alt="" />
+                </div>
+                <div class="about-flex-description">
+                    <h2>Diseñamos sistemas de Gestión para tu emprendimiento</h2>
+                    <p style="font-size: 15px">
+                       Comienza a perfeccionar tu empresa, ahorrar tiempo y mejorar la eficiencia del movimiento que tiene tu empresa, 
+                       proporcinamos el software para cumplir tus sueños, dependiendo del ambito que desees, presupuesto, diseño y administracion que
+                       necesite tu sistema de gestion, ya sea de manera local, u online, programa web o de escritorio, podemos hacerlo realidad, al alcance de tu bolsillo.
+                    </p>
+                    <br>
+                    <p style="font-size: 15px">
+                        Tabajamos con varios lenguajes de Programación, desde lenguajes complejos como Phyton, C++, PHP hasta el lenguajes como el mitico Java, o C#, tambien 
+                        trabajamos con la creacion de Tu pagina Web, y un asesoramiento personalizado de como usarlo.
+                    </p>
+                    <br>
+                    <div class="box" align="center" >
+                        <a href="#" class="btn">Empezar Ahora</a>
+                    </div>
+                   
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="services2">
+        <div class="container2">
+            <h2 style="font-size: 20px">Tecnologia y Accesorios de las mejores Marcas</h2>
+            <p style="font-size: 15px" class="large">
+                Tenemos la mejor tecnologia para tu Computadora de escritorio, laptop, Celular o Tablets, o Consolas, contamos con stok disponible, trabajamos con Marcas
+                como Dell, HP, Azus, Apple, Msi, Lenovo, y tambien tenemos disponible varios Accesorios de tipo oficina, Gamer, o para empresas industriales, tambien contamos con
+                camaras de seguridad, de todos los estilos, para la seguridad del día.
+            </p>
+            <div class="services-flex" >
+
+                <div class="services-flex-box" style="background-image: url('images/fondo1.png');">                    
+                    <img src="images/icon-1.png" alt="" />
+                    <h4 style="font-size: 15px">Laptos y Hardware</h4>
+                    <p style="font-size: 13px">
+                        Contamos con las mejores laptos, y hardware para armar tu computadora soñada, piezas de las mejores marcas como Dell, Azus, msi, Nvidia, entre más.
+                    </p>
+                </div>
+                <div class="services-flex-box" style="background-image: url('images/fondo2.png');">
+                    <img src="images/icon-2.png" alt="" />
+                    <h4 style="font-size: 15px">Accesorios Variados</h4>
+                    <p style="font-size: 13px">
+                       Encuentra una gran variedad de Accesorios para tu laptop, celular, Tablet, Computadora de Escritorio y camaras de seguridad, con garantia de hasta 1 año.
+                    </p>
+                </div>
+                <div class="services-flex-box" style="background-image: url('images/fondo3.png');">
+                    <img src="images/icon-3.png" alt="" />
+                    <h4 style="font-size: 15px">Camaras de Seguridad</h4>
+                    <p style="font-size: 13px">
+                        Contamos con la mejor tecnologia de Seguridad como camaras, receptores de Seguridad, sensores, alertas entre muchos más.
+                    </p>
+                </div>
+                <div class="services-flex-box" style="background-image: url('images/fondo4.png');">
+                    <img src="images/icon-4.png" alt="" />
+                    <h4 style="font-size: 15px">Consolas y Accesorios</h4>
+                    <p style="font-size: 13px">
+                        Empieza tu camino Gamer aqui con nosotros, contamos con consolas, desde la Playstation1 hasta la 5, tambien consolas portables, entre accesorios y muchos mas.
+                    </p>
+                </div>
+            </div>
+            
+        </div>
+        <br>
+        <div class="box" align="center" >
+            <a align="center" href="products.html" class="btn">Productos Aquí</a>
+        </div>
+    </section>
+    <section class="seperator"></section>
+    <section class="footer">
+        <div class="box-container">
+            <div class="box">
+                <h3>Enlaces Rapidos</h3>
+                <a href="home.html"> <i class="fas fa-angle-right"></i> Inicio</a>
+                <a href="products.html"> <i class="fas fa-angle-right"></i> Productos</a>
+                <a href="about.html"> <i class="fas fa-angle-right"></i> Acerca de</a>
+                <a href="blogs.html"> <i class="fas fa-angle-right"></i> Blogs</a>
+                <a href="contact.html"> <i class="fas fa-angle-right"></i> Contactanos</a>
+                <a href="login.html"> <i class="fas fa-angle-right"></i> Inciar Sesión</a>
+                <a href="register.html"> <i class="fas fa-angle-right"></i> Registrate</a>
+                <a href="cart.html"> <i class="fas fa-angle-right"></i> Carrito</a>
+            </div>
+            <div class="box">
+                <h3>Siguenos</h3>
+                <a href="#"> <i class="fab fa-facebook-f"></i> Facebook </a>
+                <a href="#"> <i class="fab fa-twitter"></i> Twitter </a>
+                <a href="#"> <i class="fab fa-instagram"></i> Instagram </a>
+                <a href="#"> <i class="fab fa-pinterest"></i> Pinterest </a>
+                <a href="#"> <i class="fab fa-linkedin"></i> Linkedin </a>
+                <a href="#"> <i class="fab fa-github"></i> Github </a>
+            </div>
+            <div class="box">
+                <h3>RECIBE TU CUPON DE DESCUENTO</h3>
+                <p>Ingresa tu correo y comienza a recibir nuestras promociones</p>
+                <form action="">
+                    <input type="email" placeholder="Ingresa tu Correo">
+                    <p>Y comienza a recibir nuestras promociones, catalogo de nuestra tecnologia, y muchas mas ofertas
+                        disponibles solo para usuarios refistrados</p>
+                    <input type="submit" value="Suscribete Ahora" class="btn">
+                </form>
+            </div>
+        </div>
+    </section>
+    <section class="seperator"></section>
+    <footer style="display:flex;justify-content:center;">
+        <center>
+            <p style="align-content: center;">Encuentra la mejor Tecnologia, los mejores programas, y el mejor servicio
+                en nuestras tiendas
+                <br><strong style="align-content: center;">MarcusTi</strong>
+                <br>&copy; 2022 marcusti.utmachala.edu.ec
+            </p>
+        </center>
+    </footer>
+</body>
+</html>
+
